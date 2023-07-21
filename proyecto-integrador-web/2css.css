@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('fuentes/Poppins-Medium.ttf') format('truetype');
+
+}    
+@font-face {
+    font-family: 'belanosima';
+    src: url('fuentes/Belanosima-SemiBold.ttf') format('truetype');
+
+}    
+
+body{
+    margin:0;
+    padding:0;
+    font-family: poppins,belanosima,Arial;
+}
+
+
+h1{font-size: 2.8em; color:#00425a}
+h2{font-size: 1.8em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.2em;}
+ul{list-style: none;}
+li{font-size: 1.0em;}
+
+
+.contenedor{
+    max-width: 1400px;
+    margin:auto
+}
+
+header{
+    background-color: #1f8a70;
+    
+    width:100%;
+    height: 110px;
+}
+
+header.contenedor{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+header nav{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding-bottom:20px;
+    
+}
+
+header a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color:blueviolet
+}
+
+#seccion1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    height:90vh;
+    background-image: url(imagenes/escuela1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+#seccion1 .contenedor{
+    color: rgb(11, 12, 12);
+    margin-top: 2px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#seccion2 .texto2{
+     width: 90%;
+     justify-content: center;
+     margin-left: 15px;
+}
+
+
+#seccion3 .contenedor{
+     width:90%;
+     text-align:initial;
+     margin-left: 15;
+}
+#seccion4 .contenedor4{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#seccion4 .nombres{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+#seccion4 .propuesta1{
+    background-image: url(imagenes/oferta1.jpg);
+    background-position: center center;
+    height: 70px;
+    width:70px;
+    background-size: cover;
+    margin-left: 10px;
+    
+}
+#seccion4 .propuesta2{
+    background-image: url(imagenes/oferta2.jpg);
+    background-position: center center;
+    height: 70px;
+    width:70px;
+    background-size: cover;
+   
+}
+#seccion4 .propuesta3{
+    background-image: url(imagenes/oferta3.jpg);
+    background-position: center center;
+    height: 70px;
+    width:70px;
+    background-size: cover;
+ 
+}
+#seccion4 .propuesta4{
+    background-image: url(imagenes/oferta4.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70px;
+    width:70px;
+    padding-top: 10px;
+    margin-right: 10px;
+  
+}
+#seccion4 .contenedor{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+
+#seccion5 .contenedor5{
+    justify-content: center;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#seccion5 .contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    
+}
+#seccion5 .espaciox{
+    width: 40%;
+    margin-left: 10px;
+;
+}
+#seccion5 .espacioy{
+    width: 40%;
+    margin-right: 10px;
+}
+
+
+    
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: first baseline;
+    background-color: #fc7300;
+    padding: 20px;
+}
+
+.columna {
+    flex-basis: 30%;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+@media (min-width:720px){
+ 
+    header.contenedor{
+        flex-direction: row;
+        justify-content:stretch;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right:20px;
+    }
+    header{
+        width:100%;
+        height: 30px;
+    }
+    #seccion4 .propuesta1{
+        background-image: url(imagenes/oferta1.jpg);
+        background-position: center center;
+        height: 100px;
+        width:15%;
+        
+    }
+    #seccion4 .propuesta2{
+        background-image: url(imagenes/oferta2.jpg);
+        background-position: center center;
+        height: 100px;
+        width:15%;
+       
+    }
+    #seccion4 .propuesta3{
+        background-image: url(imagenes/oferta3.jpg);
+        background-position: center center;
+        height: 100px;
+        width:15%;
+     
+    }
+    #seccion4 .propuesta4{
+        background-image: url(imagenes/oferta4.jpg);
+        background-position: center center;
+        height: 100px;
+        width:15%;
+      
+    }
+    #seccion4 .contenedor4{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #seccion4 .contenedor{
+        display: flex;
+        margin-top: 30px;
+        
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    
+    }
+    form {
+        max-width: 400px;
+        margin-left: 20px;
+    }
+
+    label, input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    
+}
