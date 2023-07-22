@@ -37,21 +37,25 @@ header{
     background-color: #1f8a70;
     
     width:100%;
-    height: 110px;
+    height: 85px;
 }
 
 header.contenedor{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    justify-content: space-between;
 
 }
 
 header nav{
     display:flex;
-    flex-direction:column;
-    text-align:center;
-    padding-bottom:20px;
+    width: 80%;
+    justify-content:center;
+    padding-bottom:15px;
+    padding-top: 6px;
+    font-size: small;
+    text-size-adjust: auto;
+    align-items: baseline;
     
 }
 
@@ -84,13 +88,23 @@ header a:hover{
 #seccion1 .contenedor{
     color: rgb(11, 12, 12);
     margin-top: 2px;
+
 }
 
 
 html{
     scroll-behavior: smooth;
 }
-
+#seccion2 .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 #seccion2 .texto2{
      width: 90%;
@@ -100,13 +114,28 @@ html{
 
 
 #seccion3 .contenedor{
-     width:90%;
-     text-align:initial;
-     margin-left: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 85%;
 }
 #seccion4 .contenedor4{
-    margin-left: 15px;
-    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 20px;
+   
+    
 }
 #seccion4 .nombres{
     display: flex;
@@ -152,30 +181,53 @@ html{
 #seccion4 .contenedor{
     width: 100%;
     display: flex;
-    height: 60px;
+    height: 140px;
     justify-content: space-between;
+    align-content: center;
 }
 
 #seccion5 .contenedor5{
+    display: flex;
     justify-content: center;
-    height: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1.5;
 }
 #seccion5 .contenedor{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-top: 2px;
     
 }
 #seccion5 .espaciox{
-    width: 40%;
-    margin-left: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 5px
 ;
 }
 #seccion5 .espacioy{
-    width: 40%;
-    margin-right: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 5px;
 }
 
 
@@ -184,9 +236,9 @@ html{
 footer {
     display: flex;
     justify-content: space-between;
-    justify-content: first baseline;
     background-color: #fc7300;
     padding: 20px;
+    background-size: cover;
 }
 
 .columna {
@@ -195,6 +247,7 @@ footer {
 
 h3 {
     font-size: 1.2em;
+    justify-content: flex-start;
 }
 
 ul {
@@ -211,20 +264,23 @@ li {
 
 
 
-@media (min-width:720px){
+@media (min-width:770px){
  
     header.contenedor{
         flex-direction: row;
-        justify-content:stretch;
+        justify-content:space-between;
     }
     header nav{
         flex-direction: row;
-        padding-bottom: 0;
+        padding-bottom: 3;
         padding-right:20px;
+        justify-content: stretch;
+        font-size: 1.1em;
+        width: 100%;
     }
     header{
         width:100%;
-        height: 30px;
+        height: 70px;
     }
     #seccion4 .propuesta1{
         background-image: url(imagenes/oferta1.jpg);
@@ -285,5 +341,81 @@ li {
         color: white;
         cursor: pointer;
     }
+   
     
+    
+    .seccion3 .imagen3 {
+        background-image: url("imagenes/escuela22.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px; 
+        height: 200px; 
+    }
+    
+    #seccion2 .contenedor {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+    }
+    
+    .columna-imagen, .columna-texto {
+        flex-basis: 50%; 
+        padding: 10px; 
+    }
+    
+    .imagen2 {
+        background-image: url("imagenes/escuela22.webp");
+        background-size: cover;
+        background-position: center;
+        width: 100%; 
+        height: 200px; 
+    }
+    
+    .texto2 {
+        max-width: 100%; 
+    }
+    
+    .texto2 h2 {
+        font-size: 1.8em;
+    }
+    
+    .texto2 p {
+        font-size: 1em;
+    }
+    
+    
+    #seccion3 .contenedor{
+        display: flex;
+    }
+
+    .seccion3 .texto3{
+        width: 50;
+        text-align: end;
+
+    }
+
+
+@media (min-width:510px){
+
+    
+    
+    header{
+      
+      height: 60px;
+    }
+
+}   
+
+    
+
+@media (min-width:1100px){
+
+    
+    
+    header{
+            
+        height: 50px;
+}   }
 }
